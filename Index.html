@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flyBird</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        canvas{
+            background: skyblue;
+            border: 1px solid #000;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+    <script src="js/underscore-min.js"></script>
+    <script src="js/simple-inheritence.js"></script>
+    <script src="js/ZyjFrameUtil.js"></script>
+    <script src="js/ZyjGame.js"></script>
+    <script src="js/ZyjBackground.js"></script>
+    <script src="js/ZyjStaticSource.js"></script>
+    <script src="js/ZyjPipe.js"></script>
+    <script src="js/ZyjBird.js"></script>
+</head>
+<body>
+<canvas id='canvas' width='900' height='600'></canvas>
+<script>
+    var game=new Game({
+       canvasId:'canvas',
+        fps:60
+    });
+
+    game.canvas.width=window.innerWidth;
+    game.canvas.height=window.innerHeight;
+</script>
+</body>
+</html>
